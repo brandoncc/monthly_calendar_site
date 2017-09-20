@@ -1,0 +1,16 @@
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+dt, dd {
+  display: inline-block;
+}
+
+dt {
+  width: 100px;
+}
+
+dl div + div {
+  margin-top: 15px;
+}

@@ -1,0 +1,38 @@
+<h1>Monthly Calendar Generator</h1>
+
+<form action="/create" method="POST">
+  <dl>
+    <div>
+      <dt>First month</dt>
+      <dd>
+        <select name="month">
+          <option>January</option>
+          <option>February</option>
+          <option>March</option>
+          <option>April</option>
+          <option>May</option>
+          <option>June</option>
+          <option>July</option>
+          <option>August</option>
+          <option>September</option>
+          <option>October</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+
+        <select name="year">
+          <% (Date.today.year..Date.today.year+10).each do |year| %>
+            <option><%= year %>
+          <% end %>
+        </select>
+      </dd>
+    </div>
+    <div>
+      <dt>Pages</dt>
+      <dd>
+        <input type="number" step="1" min="1" value="1" name="pages">
+      </dd>
+    </div>
+  </dl>
+  <button type="submit">Download Calendar</button>
+</form>
