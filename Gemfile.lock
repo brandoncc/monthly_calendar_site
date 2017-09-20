@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.8.0)
-    monthly_calendar (0.2.2)
+    monthly_calendar (0.2.3)
       prawn (~> 2.2)
     multi_json (1.12.1)
     mustermann (1.0.1)
